@@ -33,7 +33,7 @@
           </div>
           <div class="form-group">
             <label class="control-label">{{ __('Password') }}</label>
-            <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+            <input class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" type="password" required>
             @if ($errors->has('password'))
               <span class="invalid-feedback" role="alert">
                <strong>{{ $errors->first('password') }}</strong>
