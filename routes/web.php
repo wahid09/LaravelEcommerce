@@ -20,3 +20,7 @@ Route::group(['namespace' => 'Admin'], function(){
 	Route::get('admin/home', 'AdminDashboardController@index');
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
